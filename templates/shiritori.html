@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポケモンしりとり</title>
+    <link rel="stylesheet" href="../static/css/shiritori.css">
+    
+</head>
+<body>
+    <div>
+        <a href="/">ルール説明</a>
+        /
+        <a href="#">ポケモンしりとり</a>
+    </div>
+    
+    <h1 id="title">ポケモンしりとり</h1><br>
+
+    <div id="player">
+        <input type="text" name="input" id="input">
+        <button type="button" id="send">キミに決めた！！</button><br>
+        <div>
+            答えを書いたら「キミに決めた」ボタンを押そう! <br>
+            PCならEnterキー、スマホなら改行ボタンを押しても送信できるよ!
+        </div>
+    </div>
+
+    <div id="buttonbox">
+        <button type="button" id="restart">はじめから</button>
+        <button type="button" id="surrender">降参する</button>
+    </div>
+    <div class="contents" id="content">
+
+        <div class="message">
+            <!-- ここにメッセージが入ります -->
+        </div>
+        
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="../static/js/json.js"></script>
+    <script src="../static/js/shiritori.js"></script>
+</body>
+</html>
